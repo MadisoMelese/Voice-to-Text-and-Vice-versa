@@ -19,11 +19,12 @@ body{
   border-radius: 5px;
   box-shadow: 0 0 20px rgb(1, 255, 179);
 }
+
 textarea{
   overflow-wrap: break-word;
   min-height: 7rem;
-  min-width: 50%;
-  max-width: 90%;
+  min-width: 10%;
+  /* max-width: fullscreen; */
   display: flex;
   flex-grow: 1;
   padding: 4rem;
@@ -35,6 +36,15 @@ textarea{
   font-size: 1.3rem;
   font-family: 'Courier New', Courier, monospace;
   color: #000;
+}
+@media screen and (max-width: 768px){
+  .container{
+    width: 90%;
+  }
+  textarea{
+    width: 60%;
+  }
+  
 }
 textarea:visited, textarea:focus, textarea:active, textarea:hover{
   border: 2px solid #1691a7;
