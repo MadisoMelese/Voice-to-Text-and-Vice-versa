@@ -10,7 +10,8 @@ recognition.continuous = true;
 recognition.interimResults = true;
 let isRecognizing = false;
  speakerBtn.addEventListener('click', () => { 
-  synth.cancel(); 
+  recognition.stop();
+  isRecognizing = false; 
   if(textInput.value === ''){
      const utterance = new SpeechSynthesisUtterance('Hey, Please enter your text'); 
      utterance.lang = 'en-US'; 
