@@ -1,0 +1,31 @@
+body{
+  background-color: #333;
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+textarea{
+  display: flex;
+  flex-grow: 1;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #1691a7;
+  border-radius: 3px;
+  resize:both;
+  border-radius: .4rem;
+}
+textarea:active{
+  border: 2px solid #1691a7;
+
+}
+.speakerBtn{
+  background-color: rgb(0, 119, 128);
+  color:white;
+  font-size: medium;
+  border: none;
+  padding:4px 10px;
+  border-radius: 3px;
+}
