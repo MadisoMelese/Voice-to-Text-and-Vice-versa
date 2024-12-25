@@ -7,11 +7,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <textarea name="textInput" id="textInput" placeholder="Type your text here" autofocus></textarea>
- <br> <button class="speakerBtn" id="speakerBtn">Speak</button><br> 
-  
- <textarea type="text" id="voiceInput" placeholder="Speak something..." ></textarea> <br> 
- <button class="speakerBtn" id="startButton">Start Voice Input</button>
+  <div class="container">
+    <h1>Voice To Speech and Vice-Versa</h1>
+    <textarea name="textInput" id="textInput" placeholder="Type your text here"></textarea> 
+      <div class="btn">
+        <button class="speakerBtn" id="speakerBtn">Start Speak</button>
+        <button class="speakerBtn" id="startButton">Start Voice Input</button> 
+        <button class="stopBtn" id="stopButton">Stop Voice Input</button>
+        <button class="stopBtn" id="resetButton">Reset</button>
+      </div>
+    </div>
+
+
   <script src="index.js"></script>
 </body>
 </html>
